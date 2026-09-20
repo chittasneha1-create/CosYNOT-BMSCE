@@ -6,9 +6,6 @@ India-focused urban flood **digital twin**: a FastAPI simulation engine plus a R
 
 This is **not** a weather map, **not** an official forecast, and **not** an AI black box. Water levels come from a deterministic discrete-time water-balance model in one Python file.
 
-**Live demo:** [https://bmsce-hack-vaishnavi.vercel.app](https://bmsce-hack-vaishnavi.vercel.app)  
-**Source:** [https://github.com/adarshu21/cosYNOT-BMSCE](https://github.com/adarshu21/cosYNOT-BMSCE)
-
 ---
 
 ## What it does
