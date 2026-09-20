@@ -1,0 +1,155 @@
+{
+  "label": "Simulation Data \u2014 Synthetic Digital Twin",
+  "city": "bengaluru",
+  "seed": 42,
+  "duration_hours": 3,
+  "delta_t_minutes": 5,
+  "hospital_H8_t0": {
+    "ettc_min": 85.0,
+    "ttw_min": 35.0,
+    "tthr_min": 60.0,
+    "risk": 35.98,
+    "elevation_m": 908.93,
+    "runoff_c": 0.88,
+    "rainfall_mm_hr": 84.87,
+    "runoff_m3_min": 40.331,
+    "drainage_m3_min": 7.85,
+    "inflow_m3_min": 15.175,
+    "water_pct": 2.0
+  },
+  "hospital_H8_t85": {
+    "water_pct": 106.45,
+    "status": "critical",
+    "ettc_min": 0.0,
+    "risk": 72.17,
+    "population_exposed": 968
+  },
+  "heavy": {
+    "peak_water_pct": 223.94,
+    "critical_zones": 23,
+    "warning_zones": 29,
+    "high_zones": 19,
+    "first_critical_min": 85.0,
+    "population_affected": 49477,
+    "flood_duration_min": 100.0,
+    "max_flow_m3_min": 13.88,
+    "mean_drainage_util": 0.895,
+    "hospital_risk": 80.87,
+    "metro_risk": 60.49,
+    "next_critical": {
+      "id": "H8",
+      "name": "H8 \u00b7 City Hospital",
+      "ettc_min": 85.0
+    }
+  },
+  "combo": {
+    "peak_water_pct": 150.2,
+    "critical_zones": 4,
+    "warning_zones": 20,
+    "high_zones": 12,
+    "first_critical_min": 125.0,
+    "population_affected": 21427,
+    "flood_duration_min": 60.0,
+    "max_flow_m3_min": 14.13,
+    "mean_drainage_util": 0.85,
+    "hospital_risk": 61.49,
+    "metro_risk": 45.82,
+    "next_critical": {
+      "id": "I7",
+      "name": "I7 \u00b7 Arterial Road",
+      "ettc_min": 125.0
+    }
+  },
+  "delta": {
+    "critical_zones": [
+      23,
+      4
+    ],
+    "peak_water_pct": [
+      223.94,
+      150.2
+    ],
+    "population_affected": [
+      49477,
+      21427
+    ],
+    "first_critical_min": [
+      85.0,
+      125.0
+    ],
+    "hospital_risk": [
+      80.87,
+      61.49
+    ],
+    "flood_duration_min": [
+      100.0,
+      60.0
+    ]
+  },
+  "validation": {
+    "initial_volume_m3": 26937.36,
+    "total_runoff_m3": 886031.084,
+    "total_drainage_m3": 449406.51,
+    "total_transferred_m3": 157584.87,
+    "final_volume_m3": 463561.935,
+    "residual_m3": -0.001,
+    "residual_pct": -0.0,
+    "note": "\u03b5 = W\u2080 + \u03a3 Qr \u0394t \u2212 \u03a3 D \u0394t \u2212 W_final. Internal transfers cancel. Near-zero residual means water is conserved."
+  },
+  "flood_lab": [
+    {
+      "id": "A",
+      "name": "Current infrastructure",
+      "critical_zones": 23,
+      "peak_water_pct": 223.94,
+      "first_critical_min": 85.0,
+      "population_affected": 49477,
+      "hospital_risk": 80.87
+    },
+    {
+      "id": "B",
+      "name": "+50% drainage capacity",
+      "critical_zones": 16,
+      "peak_water_pct": 214.3,
+      "first_critical_min": 85.0,
+      "population_affected": 37521,
+      "hospital_risk": 80.43
+    },
+    {
+      "id": "C",
+      "name": "Retention pond expansion",
+      "critical_zones": 23,
+      "peak_water_pct": 223.94,
+      "first_critical_min": 85.0,
+      "population_affected": 49477,
+      "hospital_risk": 80.87
+    },
+    {
+      "id": "D",
+      "name": "Increase green surface",
+      "critical_zones": 4,
+      "peak_water_pct": 165.68,
+      "first_critical_min": 110.0,
+      "population_affected": 21078,
+      "hospital_risk": 76.36
+    },
+    {
+      "id": "E",
+      "name": "Blocked drainage connection",
+      "critical_zones": 17,
+      "peak_water_pct": 188.63,
+      "first_critical_min": 105.0,
+      "population_affected": 40397,
+      "hospital_risk": 76.37
+    },
+    {
+      "id": "F",
+      "name": "Protect hospital package",
+      "critical_zones": 4,
+      "peak_water_pct": 150.2,
+      "first_critical_min": 125.0,
+      "population_affected": 21427,
+      "hospital_risk": 61.49
+    }
+  ]
+}

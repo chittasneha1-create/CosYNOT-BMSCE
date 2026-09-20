@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #070b14;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(124, 58, 237, 0.16), transparent 50%),
+    radial-gradient(700px 400px at 100% 0%, rgba(14, 165, 233, 0.08), transparent 45%),
+    #070b14;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a3350 transparent;
+}
+
+.glass {
+  background: rgba(12, 18, 34, 0.72);
+  border: 1px solid rgba(167, 139, 250, 0.14);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.kpi {
+  @apply glass rounded-xl px-3 py-2.5;
+}
+
+.section-title {
+  @apply font-display text-[11px] tracking-[0.22em] uppercase text-violetx-300/80;
+}
+
+.map-cell {
+  transition: background-color 180ms linear, box-shadow 180ms linear, transform 120ms ease;
+}
+
+.status-normal { background: #155e75; }
+.status-safe { background: #047857; }
+.status-warning { background: #ca8a04; }
+.status-high { background: #ea580c; }
+.status-critical { background: #e11d48; }
+
+.status-normal.selected,
+.status-safe.selected,
+.status-warning.selected,
+.status-high.selected,
+.status-critical.selected {
+  box-shadow: inset 0 0 0 2px #e2e8f0;
+}
+
+input[type="range"] {
+  accent-color: #8b5cf6;
+}
+
+.satellite-map.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #0a1628;
+  font-family: inherit;
+}
+
+.flood-theater .leaflet-control-zoom {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.flood-theater .leaflet-control-zoom a {
+  background: rgba(0, 0, 0, 0.55) !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.flood-theater .leaflet-bottom.leaflet-left {
+  bottom: 5.5rem;
+}
+
+.flood-hero {
+  font-family: Oswald, "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 8vw, 5.6rem);
+  letter-spacing: 0.18em;
+  line-height: 0.95;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.85);
+}
+
+.flood-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  background: #1677d6;
+  padding: 0.55rem 1.15rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.flood-cta:hover {
+  background: #1d86ef;
+}
+
+.flood-icon {
+  border-radius: 0.4rem;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.4rem;
+  color: white;
+}
+
+.flood-slider {
+  accent-color: #38bdf8;
+  height: 6px;
+  cursor: pointer;
+}
+
+.flood-slider::-webkit-slider-thumb {
+  background: #38bdf8;
+}
