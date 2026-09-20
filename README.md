@@ -310,8 +310,4 @@ cosYNOT BMSCE is a **simulation and decision-support prototype** (hackathon / te
 - Historical Indian flood events are for **context**, not replay of measured hydrographs.
 - In a real flood, follow **police, fire, NDRF/SDRF, municipal, IMD, and NDMA** instructions — not this screen.
 
----
 
-## License (this repository)
-
-Project source is published at [adarshu21/cosYNOT-BMSCE](https://github.com/adarshu21/cosYNOT-BMSCE). Third-party libraries and map tiles remain under **their own** licenses and terms; this README does not relicense them.
